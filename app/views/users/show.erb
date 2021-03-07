@@ -1,0 +1,11 @@
+  
+<h3>All Tweets for <em><%= @user.username %></em>:</h3>
+<ul>
+<% @user.tweets.each do |tweet| %>
+  <li><%= tweet.content %></li>
+<% end %>
+</ul>
+
+
+
+<a href="/tweets">Go Back</a> to Tweet Feed

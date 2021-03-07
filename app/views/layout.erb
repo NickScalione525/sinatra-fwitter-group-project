@@ -1,15 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title>Fwitter</title>
   </head>
   <body>
-
-    <div class="container">
-      <h1>Welcome to Fwitter!</h1>
-      <h2>This is located in layout.erb!</h2>
-      <h2>Don't forget to <strong>yield</strong> your views!</h2>
-    </div>
-
+    <a href="/">Home</a>
+    <a href="/logout">Logout</a>
+    <a href="/signup">Signup</a>
+    <a href="/login">Login</a>
+    <a href="/tweets/new">New Tweet</a>
+    <%= yield %>
   </body>
 </html>

@@ -1,0 +1,8 @@
+<h3>Welcome to Fwitter!</h3>
+
+<% if logged_in? %>
+    <p> You are logged in as <%= current_user.username %><br><br>
+    Go to <a href='/tweets'>Tweet Feed</a> or <a href="/logout">log izzout</a></p>
+<% else %>
+    <p>To view Tweet Feed, please <a href="/login">log in</a> or <a href="/signup">sign up</a></p>
+<% end %>
